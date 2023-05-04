@@ -52,6 +52,11 @@ jobs:
             cd $GITHUB_WORKSPACE
             echo "<html></html>" >  build/web/archives/index.html
 
+    - name: test
+      run: |
+            cd $GITHUB_WORKSPACE
+            ls -la
+            find
 
     - name : "Upload to GitHub pages"
       uses: JamesIves/github-pages-deploy-action@v4.4.1
